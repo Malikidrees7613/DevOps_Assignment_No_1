@@ -1043,27 +1043,52 @@ class AITherapyChatbot:
   </head>
   <body class="text-white">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-md border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="font-space font-bold text-xl gradient-text">
-                    Muhammad Idrees
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link text-white hover:text-cyan transition-colors">Home</a>
-                    <a href="about.html" class="nav-link text-white hover:text-cyan transition-colors">About</a>
-                    <a href="projects.html" class="nav-link text-white hover:text-cyan transition-colors">Projects</a>
-                    <a href="contact.html" class="nav-link text-white hover:text-cyan transition-colors">Contact</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-white">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-md border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="font-space font-bold text-xl gradient-text">
+            Muhammad Idrees
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="nav-link text-white hover:text-cyan transition-colors"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="nav-link text-white hover:text-cyan transition-colors"
+              >About</a
+            >
+            <a
+              href="projects.html"
+              class="nav-link text-white hover:text-cyan transition-colors"
+              >Projects</a
+            >
+            <a
+              href="contact.html"
+              class="nav-link text-white hover:text-cyan transition-colors"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button id="mobile-menu-btn" class="text-white">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
@@ -1119,6 +1144,129 @@ class AITherapyChatbot:
           </div>
           <div class="floating-icon text-4xl" style="animation-delay: 2.5s">
             📱
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Offered Section -->
+    <section class="py-20 relative bg-charcoal/50 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 reveal-element">
+          <h2
+            class="text-4xl md:text-5xl font-bold mb-6 gradient-text font-space">
+            Services Offered
+          </h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+            I offer tailored solutions in AI, ML, mobile, and full-stack
+            development — turning innovative ideas into intelligent products.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- AI & Machine Learning -->
+          <div
+            class="tech-card p-8 rounded-2xl text-center group hover:-translate-y-3 transition-transform duration-300">
+            <div class="text-5xl mb-4 gradient-text">🤖</div>
+            <h3 class="text-xl font-semibold text-cyan mb-3">
+              AI & Machine Learning
+            </h3>
+            <p class="text-gray-300 mb-4">
+              Developing intelligent algorithms, predictive models, and NLP
+              systems that deliver actionable insights and automation.
+            </p>
+            <a
+              href="projects.html"
+              class="text-sm font-medium text-cyan hover:underline">
+              Learn More →
+            </a>
+          </div>
+
+          <!-- Mobile App Development -->
+          <div
+            class="tech-card p-8 rounded-2xl text-center group hover:-translate-y-3 transition-transform duration-300">
+            <div class="text-5xl mb-4 gradient-text">📱</div>
+            <h3 class="text-xl font-semibold text-purple mb-3">
+              Mobile App Development
+            </h3>
+            <p class="text-gray-300 mb-4">
+              Creating high-performance, user-friendly Android applications
+              powered by modern frameworks and backend APIs.
+            </p>
+            <a
+              href="projects.html"
+              class="text-sm font-medium text-cyan hover:underline">
+              Learn More →
+            </a>
+          </div>
+
+          <!-- Data Science & Analytics -->
+          <div
+            class="tech-card p-8 rounded-2xl text-center group hover:-translate-y-3 transition-transform duration-300">
+            <div class="text-5xl mb-4 gradient-text">📊</div>
+            <h3 class="text-xl font-semibold text-orange mb-3">
+              Data Science & Analytics
+            </h3>
+            <p class="text-gray-300 mb-4">
+              End-to-end data pipeline design, visualization dashboards, and
+              analytics-driven insights for informed decisions.
+            </p>
+            <a
+              href="projects.html"
+              class="text-sm font-medium text-cyan hover:underline">
+              Learn More →
+            </a>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div
+            class="tech-card p-8 rounded-2xl text-center group hover:-translate-y-3 transition-transform duration-300">
+            <div class="text-5xl mb-4 gradient-text">☁️</div>
+            <h3 class="text-xl font-semibold text-cyan mb-3">Cloud & DevOps</h3>
+            <p class="text-gray-300 mb-4">
+              Deploying scalable and secure cloud solutions using AWS, Docker,
+              and CI/CD pipelines for robust automation.
+            </p>
+            <a
+              href="projects.html"
+              class="text-sm font-medium text-cyan hover:underline">
+              Learn More →
+            </a>
+          </div>
+
+          <!-- Web Development -->
+          <div
+            class="tech-card p-8 rounded-2xl text-center group hover:-translate-y-3 transition-transform duration-300">
+            <div class="text-5xl mb-4 gradient-text">💻</div>
+            <h3 class="text-xl font-semibold text-purple mb-3">
+              Web Development
+            </h3>
+            <p class="text-gray-300 mb-4">
+              Building responsive and performant web apps with modern stacks
+              like React, Node.js, and Tailwind CSS.
+            </p>
+            <a
+              href="projects.html"
+              class="text-sm font-medium text-cyan hover:underline">
+              Learn More →
+            </a>
+          </div>
+
+          <!-- AI Chatbot Integration -->
+          <div
+            class="tech-card p-8 rounded-2xl text-center group hover:-translate-y-3 transition-transform duration-300">
+            <div class="text-5xl mb-4 gradient-text">💬</div>
+            <h3 class="text-xl font-semibold text-orange mb-3">
+              AI Chatbot Integration
+            </h3>
+            <p class="text-gray-300 mb-4">
+              Integrating conversational AI chatbots for enhanced customer
+              experience and intelligent business automation.
+            </p>
+            <a
+              href="projects.html"
+              class="text-sm font-medium text-cyan hover:underline">
+              Learn More →
+            </a>
           </div>
         </div>
       </div>
