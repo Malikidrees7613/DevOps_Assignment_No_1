@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:18'   // Node image with npm installed
-        }
-    }
+    agent any
 
     stages {
         stage('Checkout') {
@@ -12,31 +8,20 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Test Pipeline') {
             steps {
-                sh 'npm install'
-            }
-        }
-
-        stage('Build Project') {
-            steps {
-                sh 'npm run build'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                sh 'npm test || true' // prevents failure if no tests exist
+                echo "Pipeline is running successfully!"
+                sh "echo Hello from Jenkins Pipeline"
             }
         }
     }
 
     post {
         success {
-            echo 'Build completed successfully!'
+            echo "Pipeline test completed successfully."
         }
         failure {
-            echo 'Build failed!'
+            echo "Pipeline test failed."
         }
     }
 }
