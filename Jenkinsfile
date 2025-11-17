@@ -10,13 +10,7 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                echo 'Installing project dependencies...'
-                sh 'npm install'
-            }
-        }
-
+      
         stage('Build Project') {
             steps {
                 echo 'Building the web project...'
