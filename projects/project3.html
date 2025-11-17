@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Classification System - Project</title>
+  <meta name="description" content="Image Classification System by Muhammad Idrees" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: linear-gradient(135deg,#1a1a2e 0%,#16213e 100%); font-family: 'Inter', sans-serif; color: white }
+    .gradient-text { background: linear-gradient(45deg,#00d4ff,#6366f1,#ff6b35); -webkit-background-clip:text; -webkit-text-fill-color:transparent }
+    .project-hero { max-width: 900px; margin: 0 auto }
+    .tag { display:inline-block; padding:6px 10px; border-radius:999px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06) }
+  </style>
+</head>
+<body class="text-white">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="font-space font-bold text-xl gradient-text"><a href="index.html">Muhammad Idrees</a></div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link text-white hover:text-cyan">Home</a>
+          <a href="about.html" class="nav-link text-white hover:text-cyan">About</a>
+          <a href="projects.html" class="nav-link text-cyan">Projects</a>
+          <a href="contact.html" class="nav-link text-white hover:text-cyan">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-28 px-6 pb-24">
+    <div class="project-hero text-center">
+      <h1 class="text-4xl md:text-5xl font-bold gradient-text">Image Classification System</h1>
+      <p class="text-gray-300 mt-4 max-w-3xl mx-auto">Neural network-based image classification with advanced preprocessing and deployment-ready pipelines.</p>
+      <div class="mt-6">
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Computer Vision</span>
+        <span class="tag">PyTorch</span>
+      </div>
+    </div>
+
+    <section class="max-w-4xl mx-auto mt-10 text-gray-200">
+      <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+      <p class="leading-relaxed mb-4">This project covers dataset curation, augmentation, model training, evaluation and a REST endpoint for inference. It includes model optimization for mobile deployment.</p>
+
+      <h3 class="text-xl font-semibold mb-2">Highlights</h3>
+      <ul class="list-disc pl-5 mb-6">
+        <li>High-accuracy CNN architectures and augmentation pipeline.</li>
+        <li>Model quantization and export to mobile-friendly formats.</li>
+        <li>Inference API with simple Flask wrapper.</li>
+      </ul>
+
+      <div class="text-center mt-8">
+        <a href="../projects.html" class="px-6 py-3 border border-white/10 rounded-lg">Back to Projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 border-t border-white/10 text-center text-gray-400">
+    <div class="max-w-7xl mx-auto px-6">
+      <p>© 2024 Muhammad Idrees. Crafted with passion for AI/ML innovation.</p>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

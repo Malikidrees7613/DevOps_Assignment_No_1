@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Muhammad Idrees</title>
+  <meta name="description" content="Projects by Muhammad Idrees - AI/ML, mobile, and cloud projects." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: linear-gradient(135deg,#1a1a2e 0%,#16213e 100%); font-family: 'Inter', sans-serif; color: white }
+    .gradient-text { background: linear-gradient(45deg,#00d4ff,#6366f1,#ff6b35); -webkit-background-clip:text; -webkit-text-fill-color:transparent }
+    .nav-link { position: relative }
+    .project-card { backdrop-filter: blur(8px); background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px }
+  </style>
+</head>
+<body class="text-white">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="font-space font-bold text-xl gradient-text"><a href="index.html">Muhammad Idrees</a></div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link text-white hover:text-cyan">Home</a>
+          <a href="about.html" class="nav-link text-white hover:text-cyan">About</a>
+          <a href="projects.html" class="nav-link text-cyan">Projects</a>
+          <a href="contact.html" class="nav-link text-white hover:text-cyan">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="pt-28 pb-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold gradient-text">Projects</h1>
+      <p class="text-gray-300 mt-4">A selection of projects that highlight AI/ML, mobile, and cloud work. Click any project to view details.</p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 pb-24">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a class="project-card p-6" href="projects/project1.html">
+        <div class="text-4xl mb-4">🧠</div>
+        <h3 class="text-xl font-semibold mb-2">AI-Powered CBT Therapy App</h3>
+        <p class="text-gray-300 text-sm mb-4">Adaptive mental health support using AI chatbots and wearable integration.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 bg-cyan/10 text-cyan rounded-full">Python</span>
+          <span class="px-3 py-1 bg-purple/10 text-purple rounded-full">ML</span>
+        </div>
+      </a>
+
+      <a class="project-card p-6" href="projects/project2.html">
+        <div class="text-4xl mb-4">☕</div>
+        <h3 class="text-xl font-semibold mb-2">Coffee Shop Profit Predictor</h3>
+        <p class="text-gray-300 text-sm mb-4">Streamlit app predicting coffee shop profitability with ML models.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 bg-cyan/10 text-cyan rounded-full">Streamlit</span>
+          <span class="px-3 py-1 bg-purple/10 text-purple rounded-full">Python</span>
+        </div>
+      </a>
+
+      <a class="project-card p-6" href="projects/project3.html">
+        <div class="text-4xl mb-4">🔍</div>
+        <h3 class="text-xl font-semibold mb-2">Image Classification System</h3>
+        <p class="text-gray-300 text-sm mb-4">Neural network-based image classification with computer vision techniques.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 bg-cyan/10 text-cyan rounded-full">Deep Learning</span>
+          <span class="px-3 py-1 bg-purple/10 text-purple rounded-full">CV</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="index.html" class="px-6 py-3 border border-white/10 rounded-lg">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 text-center text-gray-400">
+      <p>© 2024 Muhammad Idrees. Crafted with passion for AI/ML innovation.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
